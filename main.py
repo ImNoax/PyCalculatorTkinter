@@ -2,7 +2,7 @@ import tkinter as tk
 
 calculation = ""
 empty = True
-
+#Add to entry
 def add_to_calculation(symbol, isOpe):
     global calculation
     global empty
@@ -14,7 +14,7 @@ def add_to_calculation(symbol, isOpe):
     else:
         clear_field()
         add_to_calculation(symbol, False)
-
+#Evaluate entry
 def evaluate_calculation():
     global calculation
     global empty
@@ -33,7 +33,7 @@ def evaluate_calculation():
     except Exception as e:
         clear_field()
         text_result.insert(1.0, "Error")
-
+#Clear entry
 def clear_field():
     global calculation
     global empty
